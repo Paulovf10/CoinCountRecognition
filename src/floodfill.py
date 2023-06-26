@@ -10,10 +10,7 @@ def floodfill_image(image):
 
     th, im_th = cv2.threshold(im_floodfill_background, 254, 255, cv2.THRESH_BINARY_INV);
 
-    # Invert floodfilled image
-    im_floodfill_inv = cv2.bitwise_not(im_floodfill_background)
-
-    # Combine the two images to get the foreground
-    im_out = im_th | im_floodfill_inv
+    kernel = np.ones((2, 2), np.uint8)
+    im_out = cv2.morphologyEx(im_th, cv2.MORPH_CLOSE, kernel, iterations=2)
 
     return im_out

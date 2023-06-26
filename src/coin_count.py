@@ -26,7 +26,7 @@ def read_img(path_image):
 
         # Adiciona o diâmetro na imagem
         cv2.putText(image, f"Diameter: {coin['diameter']}", (center_x - radius, center_y + radius + 20),
-                    cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2)
+                    cv2.FONT_HERSHEY_DUPLEX, 0.5, (0, 0, 0), 2)
 
     cv2.imshow('Imagem', image)
     cv2.waitKey(0)
