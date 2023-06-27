@@ -48,7 +48,7 @@ def read_img(path_image):
 
     # Calcula o valor total das moedas presentes na imagem
     total_value = calculate_total_value(coins)
-    print(f'O valor total das moedas na imagem é de R$ {total_value:.2f}')
+    print(f'{total_value:.2f}')
 
 
 def save_image(image, path_image):

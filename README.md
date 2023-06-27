@@ -33,6 +33,14 @@ Aqui está o fluxo geral de desenvolvimento do projeto:
 3. Execute o script `main.py` com o comando `python main.py`.
 4. Insira o nome da imagem que você deseja analisar quando solicitado.
 
+
+## Respostas do sistema
+
+1. Adicione a imagem ao diretório static.
+2. Inicie o programa e insira o nome da imagem.
+3. Ele retornara o valor total da imagem.
+4. Sera salva na pasta result a imagem com seus diâmetro gravados.
+
 ## Contribuição
 
 Este é um projeto acadêmico, por isso não estamos buscando contribuições ativas. No entanto, se você encontrar algum problema ou tiver uma sugestão de melhoria, fique à vontade para abrir uma issue.

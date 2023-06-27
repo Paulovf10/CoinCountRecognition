@@ -20,6 +20,7 @@ def classify_coins_by_diameter_and_color(coins):
 
     return grouped_coins
 
+
 def calculate_total_value(coins):
     grouped_coins = classify_coins_by_diameter_and_color(coins)
     total_value = 0
