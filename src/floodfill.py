@@ -4,7 +4,6 @@ import numpy as np
 
 def floodfill_image(image):
 
-    # change background to white
     im_floodfill_background = image.copy()
     cv2.floodFill(im_floodfill_background, None, (0, 0), 255)
 
